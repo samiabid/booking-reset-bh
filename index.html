@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A 48-hour WhatsApp booking reset for Bahrain service businesses." />
+  <title>The Booking Reset — Bahrain</title>
+  <style>
+    :root { --ink:#10201d; --muted:#5b6b66; --line:#dbe4e0; --paper:#f6f7f1; --lime:#d9ff6e; --card:#ffffff; --deep:#142a24; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color:inherit; }
+    .wrap { max-width:1120px; margin:auto; padding:0 24px; }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:22px 0; }
+    .brand { font-weight:850; letter-spacing:-.04em; font-size:1.18rem; text-decoration:none; }
+    .brand i { color:#4d6b00; font-style:normal; }
+    .pill, .cta { display:inline-flex; align-items:center; justify-content:center; border-radius:999px; text-decoration:none; font-weight:750; border:1px solid var(--ink); transition:.18s ease; }
+    .pill { padding:8px 14px; font-size:.83rem; background:transparent; }
+    .cta { padding:14px 20px; background:var(--lime); box-shadow:3px 3px 0 var(--ink); }
+    .cta:hover { transform:translate(2px,2px); box-shadow:1px 1px 0 var(--ink); }
+    .hero { display:grid; grid-template-columns:1.15fr .85fr; gap:64px; padding:74px 0 80px; align-items:center; }
+    .eyebrow { text-transform:uppercase; letter-spacing:.12em; color:#547067; font-size:.75rem; font-weight:800; }
+    h1 { letter-spacing:-.065em; font-size:clamp(3.15rem,7vw,6.3rem); line-height:.93; margin:15px 0 24px; max-width:800px; }
+    .hero p { color:var(--muted); max-width:590px; font-size:1.13rem; margin:0 0 28px; }
+    .fine { display:block; color:var(--muted); font-size:.8rem; margin-top:16px; }
+    .visual { background:var(--deep); padding:18px; border:1px solid #0d1c18; border-radius:26px; box-shadow:8px 8px 0 #cbd6d1; color:white; }
+    .phone { background:#e9eee9; border-radius:18px; padding:12px; color:#19322b; }
+    .phone-top { display:flex; justify-content:space-between; padding:5px 4px 13px; font-size:.72rem; font-weight:750; }
+    .chat { background:#cbe8a2; border-radius:13px 13px 3px 13px; padding:10px 12px; width:83%; margin:10px 0 10px auto; font-size:.85rem; }
+    .reply { background:white; border-radius:13px 13px 13px 3px; padding:11px 12px; width:86%; font-size:.85rem; margin:10px 0; box-shadow:0 1px 2px #c9d1c9; }
+    .quick { display:grid; gap:7px; margin-top:10px; }
+    .quick div { border:1px solid #9ac779; color:#42662c; background:#f9fff2; border-radius:8px; padding:8px; text-align:center; font-weight:700; font-size:.77rem; }
+    .visual > p { color:#d8e6df; font-size:.83rem; margin:15px 2px 0; }
+    section { padding:84px 0; border-top:1px solid var(--line); }
+    h2 { font-size:clamp(2rem,4.2vw,3.6rem); letter-spacing:-.055em; line-height:.98; margin:0 0 20px; max-width:760px; }
+    .sub { color:var(--muted); max-width:680px; margin-bottom:34px; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; min-height:210px; }
+    .n { display:inline-grid; place-items:center; width:28px; height:28px; border-radius:50%; background:var(--lime); border:1px solid var(--ink); font-size:.75rem; font-weight:800; margin-bottom:34px; }
+    .card h3 { letter-spacing:-.035em; font-size:1.15rem; margin:0 0 8px; }
+    .card p { color:var(--muted); font-size:.93rem; margin:0; }
+    .offer { display:grid; grid-template-columns:1fr .85fr; gap:26px; background:var(--deep); color:white; border-radius:22px; padding:38px; }
+    .offer h2 { margin-bottom:14px; }
+    .offer p { color:#d5e0db; max-width:600px; }
+    .price { background:var(--lime); color:var(--ink); border-radius:16px; padding:24px; align-self:center; }
+    .price small { font-weight:750; color:#455640; display:block; }
+    .amount { font-size:4.4rem; letter-spacing:-.09em; line-height:1; font-weight:900; margin:8px 0; }
+    .price ul { padding-left:18px; margin:18px 0 0; font-size:.89rem; }
+    .who { display:grid; grid-template-columns:1fr 1fr; gap:32px; }
+    .who ul { margin:0; padding-left:18px; color:var(--muted); }
+    .who li { margin:8px 0; }
+    .faq { display:grid; gap:10px; }
+    details { background:white; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+    summary { cursor:pointer; font-weight:750; }
+    details p { margin:12px 0 2px; color:var(--muted); }
+    footer { background:#0e1c18; color:#dae4df; padding:30px 0 38px; font-size:.88rem; }
+    footer .wrap { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    @media (max-width:760px) { .hero,.offer,.who { grid-template-columns:1fr; gap:34px; } .grid { grid-template-columns:1fr; } h1 { font-size:3.7rem; } section { padding:58px 0; } .offer { padding:26px; } }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav>
+      <a class="brand" href="#top">THE <i>BOOKING</i> RESET</a>
+      <a class="pill" href="#offer">Bahrain pilot · 3 places</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="wrap hero" style="border-top:0">
+      <div>
+        <div class="eyebrow">For Bahrain mobile-service teams</div>
+        <h1>Stop letting WhatsApp leads go cold.</h1>
+        <p>A focused 48-hour reset for cleaning, car-care, repair, and home-service businesses that still lose jobs to slow replies, vague quotes, and back-and-forth booking messages.</p>
+        <a class="cta" href="mailto:hello@samiabid.com?subject=Booking%20Reset%20pilot%20request&body=Business%20name%3A%0AWhat%20customers%20usually%20message%20you%20about%3A%0AWhere%20do%20bookings%20get%20lost%3A">Request a 10-minute leak check →</a>
+        <span class="fine">No software replacement. No long contract. We work around the WhatsApp process you already use.</span>
+      </div>
+      <div class="visual" aria-label="Illustration of a faster WhatsApp booking reply">
+        <div class="phone">
+          <div class="phone-top"><span>WhatsApp Business</span><span>11:42</span></div>
+          <div class="chat">Hi — I need a car interior clean in Saar tomorrow. What’s the price?</div>
+          <div class="reply">Hi! A deep interior clean starts at <b>BD 25</b>. Pick a preferred time below and we’ll confirm your slot.</div>
+          <div class="quick"><div>Tomorrow morning</div><div>Tomorrow afternoon</div><div>Get a quote first</div></div>
+        </div>
+        <p>Clear reply → qualified request → confirmed job. No app for the customer to learn.</p>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="eyebrow">The actual problem</div>
+      <h2>Your team does not need another dashboard. It needs fewer dead-end chats.</h2>
+      <p class="sub">Most service businesses already have WhatsApp. The leak happens between “How much?” and “When can you come?” We tighten that hand-off without forcing your customers into a new app.</p>
+      <div class="grid">
+        <article class="card"><span class="n">01</span><h3>Slow first replies</h3><p>Customers message after hours, during jobs, or while your team is driving. By the time someone replies, they have asked three competitors.</p></article>
+        <article class="card"><span class="n">02</span><h3>Unqualified quotes</h3><p>Staff repeatedly ask for the same basics: area, service type, vehicle, problem, preferred time. The chat goes nowhere.</p></article>
+        <article class="card"><span class="n">03</span><h3>Bookings that disappear</h3><p>Requests sit in chat threads, follow-ups are forgotten, and tomorrow’s work is confirmed too late to fill a cancellation.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="offer">
+      <div class="offer">
+        <div>
+          <div class="eyebrow" style="color:#d9ff6e">48-hour Booking Reset</div>
+          <h2>One lean conversion system, installed around the way you already work.</h2>
+          <p>We map your actual incoming questions, turn them into a clear WhatsApp reply path, set up a simple quote/booking intake, and give your team a follow-up rhythm they can run in minutes.</p>
+          <p><b>Built for:</b> mobile car-care, cleaning, maintenance, repair, and other field teams where an unanswered message can mean a lost job.</p>
+        </div>
+        <aside class="price">
+          <small>FOUNDING PILOT · ONE-TIME</small>
+          <div class="amount">BD 115</div>
+          <small>Pay only after the 10-minute leak check confirms a fit.</small>
+          <ul>
+            <li>WhatsApp Business message map and quick replies</li>
+            <li>One simple quote / booking intake path</li>
+            <li>Click-to-WhatsApp entry points for Instagram or Google</li>
+            <li>Tomorrow-job confirmation checklist</li>
+            <li>30-minute team handover + seven days of fixes</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="who">
+        <div><div class="eyebrow">Good fit</div><h2>Businesses where one saved job can pay for the reset.</h2></div>
+        <div><ul><li>Mobile car wash, detailing, and repair teams</li><li>Cleaning and pest-control services</li><li>AC, appliance, and home-maintenance businesses</li><li>High-value local services that book through WhatsApp</li></ul><br><p class="sub">Not for businesses that want a full CRM, a custom mobile app, or an AI agent before their basic booking process is clear.</p></div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="eyebrow">Straight answers</div>
+      <h2>Small enough to move this week.</h2>
+      <div class="faq">
+        <details><summary>Do I need to replace my current booking tool?</summary><p>No. The reset starts with the WhatsApp and booking steps you already use. If a later tool change is worthwhile, you will know exactly why before spending on it.</p></details>
+        <details><summary>Does this require a WhatsApp chatbot?</summary><p>No. We begin with clearer, faster customer paths using WhatsApp Business and a lightweight intake flow. A chatbot or API only makes sense after the basic path proves it earns its keep.</p></details>
+        <details><summary>How long does it take?</summary><p>The pilot is designed to be installed in 48 hours once we have your services, service areas, working hours, and the person who manages customer messages.</p></details>
+        <details><summary>What happens after the pilot?</summary><p>You own the messages, intake structure, and team process. The seven-day follow-up window is there to fix small issues after your staff begins using it.</p></details>
+      </div>
+    </section>
+
+    <section class="wrap" style="padding-top:10px;border-top:0">
+      <div style="text-align:center;background:#e8eee9;border:1px solid var(--line);border-radius:18px;padding:44px 22px">
+        <div class="eyebrow">Three Bahrain pilot places</div>
+        <h2 style="margin:12px auto 22px">Find out where your booking chats leak.</h2>
+        <a class="cta" href="mailto:hello@samiabid.com?subject=Booking%20Reset%20pilot%20request&body=Business%20name%3A%0AWhat%20customers%20usually%20message%20you%20about%3A%0AWhere%20do%20bookings%20get%20lost%3A">Request a 10-minute leak check →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><span>The Booking Reset · Bahrain pilot</span><a href="mailto:hello@samiabid.com">hello@samiabid.com</a></div></footer>
+</body>
+</html>
